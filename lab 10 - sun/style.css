@@ -132,13 +132,32 @@ text-decoration: none;
 @media screen and (max-width: 1200px){
   body, #wrapper{
     width:100%;
+}
+ .maincontainer {
+
+ }
 
 
 }
 
  @media only screen and (max-width : 768px) {
  	body{
- 		min-width: 600px !important;
+ 	
+ 	}
+ 	.seat{
+ 		height:50px;
+ 		width: 50px;
  	}
 
     }
+
+
+ @media only screen and (max-width : 510px) {
+ 	.seat{
+ 		height:30px;
+ 		width: 30px;
+ 	}
+ 	body, #wrapper{
+ 		min-width: 340px !important;
+ 	}
+ }
