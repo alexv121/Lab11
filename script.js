@@ -11,10 +11,9 @@ $(".seat:not(.na)").popover({
 
 //Hide the other popovers when you select another
 $('.seat:not(.na)').on('click', function (e) {
-	if (".seat:not(.na)"){
     $('.seat:not(.na)').not(this).popover('hide');
-}	else if (".seat:not(.na)").on("second click", function (e){
-	(".seat:not(.na)").not(this).popover("hide");
-})
 });
 
+$(".seat:not(.na)").on("click",function (e){
+	$("main").popovers("hide");
+})
