@@ -13,3 +13,8 @@ $(".seat:not(.na)").popover({
 $('.seat:not(.na)').on('click', function (e) {
     $('.seat:not(.na)').not(this).popover('hide');
 });
+
+$(".seat:not(.na)").on("click",function (e){
+	$("main").popovers("hide");
+});
+

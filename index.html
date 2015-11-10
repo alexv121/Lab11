@@ -13,11 +13,11 @@
 <body>
 	<!-- Seat request form -->
 	<div id="seat-form-content" class="hide">
-		<form class="form-inline" role="form">
+		<form class="form-inline" role="form" name="submitForm">
 			<div class="form-group">
-			<input type="text" placeholder="Name">
-			<input type="text" placeholder="Email"> 
-			<button type="button" href="#">Submit</button>                               
+			<input type="text" placeholder="Name" name="name">
+			<input type="text" placeholder="Email" name="email"> 
+			<input type="button" id="Submit" value="Submit">                               
 			</div>
 		</form>
 	</div>
@@ -32,8 +32,10 @@
 		</header>
 
 		<main>
+			<h2> Welcome to seat reservation!</h2>
+					<p> Please reserve your seating as follows: Red seats are not available. Green seats are availabe. Click on green seat and fill out form. Then hit submit.</p>
 			<div id="maincontainer">
-				<div class = "col-fixed row-4">
+				<div class = "col-fixed row-4">	
 			<!-- 	Start of Form Hover seat 1: -->
 					<div class= "seat shadow "></div>
 			<!--   	End of Form Hover seat 1-->
